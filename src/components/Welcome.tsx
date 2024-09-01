@@ -41,7 +41,7 @@ const Welcome = () => {
 
     return (
         <section className='absolute z-50 w-full h-full flex items-center justify-center'>
-            <div id='box' className='w-[80%] flex flex-col items-center justify-center md:w-[55%] text-center h-[70%] rounded-3xl px-5 py-8 overflow-hidden opacity-0'>
+            <div id='box' className='w-[80%] flex flex-col items-center justify-center md:w-[55%] text-center md:h-[70%] h-[80%] rounded-3xl px-5 py-8 overflow-hidden opacity-0'>
                 <h1 className='text-bold md:text-3xl text-xl text-white line-clamp-1 pb-7'>🌟 Discover Your Inner Deity! 🌟</h1>
                 <div id='textbox' className="leading-7 text-sm md:text-xl text-[1.2rem] tracking-wide text-center">
                     <span id='text1' className='text-pink-300 text-[1.2rem] tracking-wide opacity-0'>

@@ -53,16 +53,16 @@ const Result = () => {
 
   return (
     <div className='w-full h-screen flex items-center justify-center z-50'>
-        <div id='box' className='md:w-[60%] grid grid-cols-2 grid-rows-2 gap-4 bg-cream-400/25 md:bg-cream-400/30 w-[80%] h-[30rem] border border-white/20 backdrop-blur-md rounded-3xl p-2'>
+        <div id='box' className='md:w-[60%] grid grid-cols-2 grid-rows-2 gap-4 bg-cream-400/25 md:bg-cream-400/30 w-[88%] ml-4 h-[30rem] border border-white/20 backdrop-blur-md rounded-3xl p-2'>
             <div className='lg:row-span-2 text-center w-full h-full flex items-center flex-col justify-center pt-16 lg:pt-0'>
-                <h1 className='text-2xl font-bold text-white md:text-3xl lg:text-4xl leading-8' >
+                <h1 className='sm:text-2xl text-lg pb-2 font-bold text-white md:text-3xl lg:text-4xl leading-8' >
                     {foundedInfo.god}
                 </h1> 
-                <p className='text-white/70 md:text-2xl text-lg lg:mb-1 tracking-wide md:leading-10'>
+                <p className='text-white/70 md:text-2xl text-sm sm:text-lg lg:mb-1 tracking-wide md:leading-10'>
                     {foundedInfo.desc1}
                 </p> 
             <div className='hidden lg:block'>
-                <p className='text-white/50 w-full leading-7'>
+                <p className='text-white/50 w-full leading-7 sm:text-lg text-sm'>
                     {foundedInfo.desc2}
                 </p>  
             </div>
@@ -70,8 +70,8 @@ const Result = () => {
             <div className='row-span-2 col-start-2 row-start-1 w-full'>
                 <img src={foundedInfo.pic} width={200} height={400} className='rounded-3xl object-cover md:object-fill w-full h-full' />
             </div>
-            <div className='lg:hidden col-span-2 p-3'>
-                <p className='text-white/50 w-full leading-7'>
+            <div className='lg:hidden col-span-2 p-2'>
+                <p className='text-white/50 text-xs font-semibold w-full leading-7'>
                     {foundedInfo.desc2}
                 </p>  
            </div>
