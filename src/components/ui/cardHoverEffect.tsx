@@ -127,8 +127,8 @@ const countMostFrequent = (arr:string[]): string => {
           </AnimatePresence>
           <Card>
             <h1 className="font-mono text-xl md:text-2xl text-cream-200 mb-4 font-semibold">{item.question}</h1>
-            {item.options.map((answer) => (
-                <div className="form-group md:text-lg text-[1rem] font-mono leading-6 tracking-tighter mb-4 text-cream-300/70">
+            {item.options.map((answer,i) => (
+                <div key={i} className="form-group md:text-lg text-[1rem] font-mono leading-6 tracking-tighter mb-4 text-cream-300/70">
                 <input 
                     type="checkbox" 
                     id="ans" 
