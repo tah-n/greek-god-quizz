@@ -21,8 +21,6 @@ export const HoverEffect = ({
         answer: string,
         god: string
     }[];
-    answer: string;
-    god: string;
   }[];
   className?: string;
 }) => {
@@ -36,7 +34,8 @@ export const HoverEffect = ({
         toast.warn("You haven't answered all the questions.");
         return;
     }else {
-        const result = countMostFrequent(selectedAnswer);
+        const filteredAnswers = selectedAnswer.filter(answer => answer !== null) as string[]; 
+        const result = countMostFrequent(filteredAnswers);
         setResultGod(result);
     }
     
@@ -102,7 +101,11 @@ const countMostFrequent = (arr:string[]): string => {
     >
       {items.map((item, idx) => (
         <div
-          ref={(el) => (cardsRef.current[idx] = el!)}
+          ref={(el) => {
+            if (el) {
+            cardsRef.current[idx] = el;
+          }
+        }}
           key={idx}
           className="relative group block p-2 h-full w-full opacity-0"
           onMouseEnter={() => setHoveredIndex(idx)}
