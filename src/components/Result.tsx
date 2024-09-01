@@ -62,7 +62,7 @@ const Result = () => {
                     {foundedInfo.desc1}
                 </p> 
             <div className='hidden lg:block'>
-                <p className='text-white/50 w-full leading-7 sm:text-lg text-sm'>
+                <p className='text-white/50 w-full leading-7 text-lg'>
                     {foundedInfo.desc2}
                 </p>  
             </div>
@@ -71,7 +71,7 @@ const Result = () => {
                 <img src={foundedInfo.pic} width={200} height={400} className='rounded-3xl object-cover md:object-fill w-full h-full' />
             </div>
             <div className='lg:hidden col-span-2 p-2'>
-                <p className='text-white/50 text-xs font-semibold w-full leading-7'>
+                <p className='text-white/50 font-semibold w-full leading-7'>
                     {foundedInfo.desc2}
                 </p>  
            </div>
